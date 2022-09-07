@@ -7,7 +7,7 @@
   "packageManager": "yarn@3.2.3",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev --parallel"
   },
   "workspaces": [
     "packages/*",
