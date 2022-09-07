@@ -4,5 +4,16 @@
   "repository": "https://github.com/yusoofsh/ephleet.git",
   "author": "Yusoof SH",
   "license": "MIT",
-  "packageManager": "yarn@3.2.3"
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.4.5"
+  }
 }
