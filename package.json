@@ -3,5 +3,6 @@
   "version": "0.0.0",
   "repository": "https://github.com/yusoofsh/ephleet.git",
   "author": "Yusoof SH",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.2.3"
 }
