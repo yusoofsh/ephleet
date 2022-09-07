@@ -6,7 +6,8 @@
 				"^build"
 			],
 			"outputs": [
-				"build/**"
+				"build/**",
+				"public/build/**"
 			]
 		},
 		"dev": {
