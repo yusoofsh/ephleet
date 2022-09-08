@@ -15,7 +15,7 @@
 		"default": {
 			"runner": "@nrwl/nx-cloud",
 			"options": {
-				"cacheableOperations": ["build", "lint", "test", "e2e"],
+				"cacheableOperations": ["build", "lint", "test", "e2e", "check"],
 				"accessToken": "ZjZhZTY2MjAtMDc1MC00NmEzLWFiMDEtNDJmM2UzZmUzNjMwfHJlYWQtd3JpdGU="
 			}
 		}
@@ -38,5 +38,6 @@
 			}
 		}
 	},
-	"defaultProject": "web"
+	"defaultProject": "web",
+	"plugins": ["@nxtensions/astro"]
 }
