@@ -2,14 +2,19 @@
 	"name": "ephleet",
 	"version": "0.0.0",
 	"license": "MIT",
+	"private": true,
 	"scripts": {
 		"serve": "nx run-many --parallel --target=serve --projects=web,docs",
 		"build": "nx run-many --parallel --target=build --projects=web,docs",
 		"test": "nx test",
 		"postinstall": "node ./tools/scripts/patch-nx-cli.js"
 	},
-	"private": true,
-	"devDependencies": {
+	"dependencies": {
+		"@algolia/client-search": "^4.13.1",
+		"@astrojs/preact": "^1.1.0",
+		"@astrojs/react": "^1.1.0",
+		"@docsearch/css": "^3.1.0",
+		"@docsearch/react": "^3.1.0",
 		"@nrwl/cli": "14.6.5",
 		"@nrwl/cypress": "14.6.5",
 		"@nrwl/eslint-plugin-nx": "14.6.5",
@@ -23,13 +28,14 @@
 		"@nxtensions/astro": "^2.3.0",
 		"@testing-library/react": "13.3.0",
 		"@types/jest": "28.1.1",
-		"@types/node": "16.11.7",
+		"@types/node": "^18.0.0",
 		"@types/react": "18.0.18",
 		"@types/react-dom": "18.0.6",
 		"@typescript-eslint/eslint-plugin": "~5.33.1",
 		"@typescript-eslint/parser": "~5.33.1",
-		"astro": "~1.0.0-beta.56",
+		"astro": "^1.1.7",
 		"babel-jest": "28.1.1",
+		"core-js": "^3.6.5",
 		"cypress": "^10.2.0",
 		"eslint": "~8.15.0",
 		"eslint-config-next": "12.2.5",
@@ -41,20 +47,18 @@
 		"eslint-plugin-react-hooks": "4.6.0",
 		"jest": "28.1.1",
 		"jest-environment-jsdom": "28.1.1",
-		"nx": "14.6.5",
-		"prettier": "^2.6.2",
-		"react-test-renderer": "18.2.0",
-		"ts-jest": "28.0.5",
-		"ts-node": "10.9.1",
-		"typescript": "~4.7.2"
-	},
-	"packageManager": "yarn@3.2.3",
-	"dependencies": {
-		"core-js": "^3.6.5",
 		"next": "12.2.5",
+		"nx": "14.6.5",
+		"preact": "^10.7.3",
+		"prettier": "^2.6.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"react-test-renderer": "18.2.0",
 		"regenerator-runtime": "0.13.7",
-		"tslib": "^2.3.0"
-	}
+		"ts-jest": "28.0.5",
+		"ts-node": "10.9.1",
+		"tslib": "^2.3.0",
+		"typescript": "~4.7.2"
+	},
+	"packageManager": "yarn@3.2.3"
 }
