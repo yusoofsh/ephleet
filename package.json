@@ -18,12 +18,9 @@
 		"@nrwl/cli": "14.6.5",
 		"@nrwl/cypress": "14.6.5",
 		"@nrwl/eslint-plugin-nx": "14.6.5",
-		"@nrwl/jest": "14.6.5",
 		"@nrwl/linter": "14.6.5",
 		"@nrwl/next": "^14.6.5",
 		"@nrwl/nx-cloud": "^14.6.2",
-		"@nrwl/react": "14.6.5",
-		"@nrwl/web": "14.6.5",
 		"@nrwl/workspace": "14.6.5",
 		"@nxrocks/nx-flutter": "^4.0.2",
 		"@nxtensions/astro": "^2.3.0",
@@ -35,6 +32,7 @@
 		"@typescript-eslint/eslint-plugin": "~5.36.2",
 		"@typescript-eslint/parser": "~5.36.2",
 		"astro": "^1.1.7",
+		"autoprefixer": "^10.4.8",
 		"babel-jest": "29.0.2",
 		"core-js": "^3.25.1",
 		"cypress": "^10.7.0",
@@ -50,12 +48,14 @@
 		"jest-environment-jsdom": "29.0.2",
 		"next": "12.2.5",
 		"nx": "14.6.5",
+		"postcss": "^8.4.16",
 		"preact": "^10.10.6",
 		"prettier": "^2.7.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-test-renderer": "18.2.0",
 		"regenerator-runtime": "0.13.9",
+		"tailwindcss": "^3.1.8",
 		"ts-jest": "28.0.8",
 		"ts-node": "10.9.1",
 		"tslib": "^2.4.0",
@@ -65,5 +65,10 @@
 	"volta": {
 		"node": "16.17.0",
 		"yarn": "1.22.19"
+	},
+	"devDependencies": {
+		"@nrwl/jest": "14.6.5",
+		"@nrwl/react": "14.6.5",
+		"@nrwl/web": "14.6.5"
 	}
 }
