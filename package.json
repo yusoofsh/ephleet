@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"serve": "nx run-many --parallel --target=serve --projects=web,docs",
+		"serve": "nx run-many --parallel --target=serve --projects=web,docs,native",
 		"build": "nx run-many --parallel --target=build --projects=web,docs",
 		"test": "nx test",
 		"postinstall": "node ./tools/scripts/patch-nx-cli.js"
@@ -25,6 +25,7 @@
 		"@nrwl/react": "14.6.5",
 		"@nrwl/web": "14.6.5",
 		"@nrwl/workspace": "14.6.5",
+		"@nxrocks/nx-flutter": "^4.0.2",
 		"@nxtensions/astro": "^2.3.0",
 		"@testing-library/react": "13.4.0",
 		"@types/jest": "29.0.0",

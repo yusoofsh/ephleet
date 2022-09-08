@@ -1,10 +1,11 @@
 {
-	"$schema": "./node_modules/nx/schemas/workspace-schema.json",
-	"version": 2,
-	"projects": {
-		"docs": "apps/docs",
-		"docs-e2e": "apps/docs-e2e",
-		"web": "apps/web",
-		"web-e2e": "apps/web-e2e"
-	}
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "docs": "apps/docs",
+    "docs-e2e": "apps/docs-e2e",
+    "web": "apps/web",
+    "web-e2e": "apps/web-e2e",
+    "native": "apps/native"
+  }
 }
