@@ -10,6 +10,7 @@
   "private": true,
   "devDependencies": {
     "@nrwl/cli": "14.6.5",
+    "@nrwl/next": "^14.6.5",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "14.6.5",
     "nx": "14.6.5",
