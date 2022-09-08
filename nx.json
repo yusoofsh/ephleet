@@ -19,10 +19,9 @@
           "build",
           "lint",
           "test",
-          "e2e",
           "check"
         ],
-        "accessToken": "ZjZhZTY2MjAtMDc1MC00NmEzLWFiMDEtNDJmM2UzZmUzNjMwfHJlYWQtd3JpdGU="
+        "accessToken": "NDA1MmExZDgtM2I0Mi00OTM0LWE2NjUtZDU3ZGY4ZTg2MWJjfHJlYWQtd3JpdGU="
       }
     }
   },
