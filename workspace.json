@@ -4,7 +4,6 @@
 	"projects": {
 		"docs": "apps/docs",
 		"native": "apps/native",
-		"shared-ui": "libs/shared/ui",
 		"web": "apps/web"
 	}
 }
