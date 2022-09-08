@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
-		"start": "nx serve",
-		"build": "nx build",
+		"serve": "nx run-many --parallel --target=serve --projects=web,docs",
+		"build": "nx run-many --parallel --target=build --projects=web,docs",
 		"test": "nx test",
 		"postinstall": "node ./tools/scripts/patch-nx-cli.js"
 	},
