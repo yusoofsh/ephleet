@@ -1,18 +1,25 @@
+import { FC, Suspense } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+import { Flowbite, Spinner } from 'flowbite-react';
 
-function EphleetApp({ Component, pageProps }: AppProps) {
+import '../styles/globals.css';
+import theme from '../styles/theme';
+
+const App: FC<AppProps> = function ({ Component, pageProps }): JSX.Element {
 	return (
-		<>
-			<Head>
-				<title>Welcome to web!</title>
-			</Head>
-			<main className="app">
+		<Suspense
+			fallback={
+				<div className="flex items-center justify-center">
+					<Spinner size="lg" /> Loading..
+				</div>
+			}
+		>
+			<Flowbite theme={{ theme }}>
 				<Component {...pageProps} />
-			</main>
-		</>
+			</Flowbite>
+		</Suspense>
 	);
-}
+};
 
-export default EphleetApp;
+export default App;
